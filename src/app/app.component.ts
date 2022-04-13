@@ -19,8 +19,7 @@ export class AppComponent {
   ngOnInit():void {
     console.log("data");
 this.titleService.getTitles().subscribe((response)=>{
-this.title=response;
-console.log(this.title);
+this.title=response.filter((r)=>r.name!='!').sort((a,b)=>a.name.localeCompare(b.name));
 });
 
 }
@@ -32,5 +31,9 @@ passData(data:any)
 childEvent(data:any)
 {
   alert(data)
+}
+binding()
+{
+
 }
 }
