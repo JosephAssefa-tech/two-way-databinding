@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +7,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 @Input() childPosts:any[]=[];
+@Output() passedEvent=new EventEmitter();
+data:string="child data sent to home";
   constructor() { }
 
   ngOnInit(): void {
+  }
+  passEvent()
+  {
+    this.passedEvent.emit(this.data);
+
+
   }
 
 }

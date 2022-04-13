@@ -29,4 +29,8 @@ passData(data:any)
   console.log(this.post);
   this.parentpost.push(this.post);
 }
+childEvent(data:any)
+{
+  alert(data)
+}
 }
