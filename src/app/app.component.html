@@ -29,11 +29,11 @@
 <h2>Property Binding</h2>
 <input type-="text" value="{{values}}">
 <hr/>
-<h2>Two way  Binding</h2>
+<h2> From parent to child </h2>
 
-<br/><br/><br/>
+
 
 <input type="text" placheholder="typehere" name="post" [(ngModel)]="post" />
 <button type="submit" (click)="passData(post)">Submit</button>
-
+<app-home [childPosts]="parentpost"></app-home>
 <router-outlet></router-outlet>
