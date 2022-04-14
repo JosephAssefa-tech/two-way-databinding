@@ -13,7 +13,7 @@ export class AppComponent {
   values="joseph";
   public title: Title[]=[];
   constructor(private titleService:TestService)
-  {
+  {355
 
   }
   ngOnInit():void {
