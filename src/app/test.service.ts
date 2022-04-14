@@ -22,6 +22,8 @@ export class TestService{
         {name:'!',isDefault:false},
         {name:'Dr',isDefault:false},
         {name:'Prof',isDefault:false},
+        {name:'Engr',isDefault:false},
+        {name:'Pilot',isDefault:false},
 
 
       ]);
