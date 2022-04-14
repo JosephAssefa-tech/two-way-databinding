@@ -26,14 +26,14 @@
 
 </form>
 
-<h2>Property Binding</h2>
+<h2>data Binding</h2>
 <input type-="text" value="{{values}}">
 <hr/>
-<h2> From parent to child </h2>
 
 
 
-<input type="text" placheholder="typehere" name="post" [(ngModel)]="post" />
+
+<input type="text" placheholder="typeheree" name="post" [(ngModel)]="post" />
 <button type="submit" (click)="passData(post)">Submit</button>
 <app-home [childPosts]="parentpost" (passedEvent)="childEvent($event)"></app-home>
 <router-outlet></router-outlet>
